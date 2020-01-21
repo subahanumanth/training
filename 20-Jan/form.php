@@ -3,7 +3,7 @@ require("phpfile.php");
 ?>
 
 <html>
-<form  method="POST" name="validate" onsubmit="return validateForm()">
+<form  method="POST" name="validate">
 Name : <input id="name" type="text" name="name" required><?php echo sprintf("%s",$nameError); ?><br><br>
 Age : <input id="age" type = "text" name="age" required><?php echo sprintf("%s",$ageError);  ?><br><br>
 Gender : <?php echo sprintf("%s",$genderError);  ?><input type="radio" name="gender" value = "Male">Male
@@ -19,7 +19,7 @@ Flavours :<?php echo sprintf("%s",$flavourError);  ?> <br><br><input type="check
 Email ID : <input id="email" type="email" name="email" required><?php echo sprintf("%s",$emailError);  ?><br><br>
 <input type="submit" name="submit">
 
-<form>
+</form>
 
 <script src="form.js"></script>
 
