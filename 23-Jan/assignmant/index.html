@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Form</title>
+<style>
+
+.center {
+  text-align:center;
+}
+
+.form {
+  margin-left : 400px;
+  border : black;
+  width : 400px;
+  padding : 0px 50px 20px 0px;
+  background-color: lightgrey;
+}
+#thanks {
+  border : black;
+  width :700px;
+  padding : 0px 50px 20px 0px;
+  background-color: black;
+
+}
+.dark {
+  margin-bottom : 10px;
+  padding : 10px;
+  text-align : left; 
+  background-color : black;
+  text-color : white;
+  width : 430;
+  margin-right : 160px;
+}
+
+.ch {
+  margin-bottom : 20px;
+}
+
+#start {
+  margin-left : 400px;  
+  margin-top : 30px;
+}
+
+#cancel {
+  margin-left : 400px;
+}
+#payment {
+ margin-left :720;
+ padding : 5px;
+
+}
+#refund {
+ margin-right : 330px;
+}
+
+#return {
+ margin-right : 93px;
+}
+#power{
+ margin-right : 350px;
+}
+#worldpay {
+ margin-right : 400px;
+}
+#help {
+ font-align : right;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<h1>FLOWER SHOP ONLINE</H1>
+<hr size="20" color="black">
+
+<div class = "center">
+
+<h2><center>Secure Payment Page<center></h2>
+<b>Select Language      :<b> <select>
+<option>English</option>
+<option>Tamil</option>
+<option>Hindi</option>
+</select><br><br>
+Payment Method : <b>Visa</b><br><br>
+Description : Item Ordered<br><br>
+Amount : $100<br><br>
+
+<div class="form">
+<div class="dark">
+<font color="white">Card Details</font> 
+</div>
+You must fill in fields marked with *<br><br>
+<form name="form" method="POST">
+*Card Number : <input type="text" name="cardNumber"><br><br>
+<u>*Security code</u> : <input type="password" name="securityCode"><br><br>
+*Expiry Date : <select id="month">
+<option value="">Month</option>
+    <option value="january">January</option>
+    <option value="february">February</option>
+    <option value="march" >March</option>
+    <option value="april" >April</option>
+    <option value="may" >May</option>
+    <option value="june">June</option>
+    <option value="july">July</option>
+    <option value="august">August</option>
+    <option value="september">September</option>
+    <option value="october">October</option>
+    <option value="novomber">November</option>
+    <option value="december">December</option>
+</select>
+<select id="year">
+<option value="">Year</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+</select><br><br>
+<div class = "ch">
+*Cardholder's Name : <input type="text" name="cardholderName">
+</div>
+<div class="dark">
+<font color="white">Cardholder Details</font>
+</div>
+You must fill in fields marked with *<br><br>
+*Address 1 : <input type="text" name="add1"><br><br>
+Address 2 : <input type="text" name="add2"><br><br>
+Address 3 : <input type="text" name="add3"><br><br>
+*Town/City : <input type="text" name="city"><br><br>
+Region : <input type="text" name="region"><br><br>
+*Postcode/Zip code : <input type="text" name="postCode"><br><br>
+*Country : 
+<select id="selected">
+<option value="">Select</option>
+<option value="united kingdom">United Kingdom</option>
+<option value="india">India</option>
+<option value="china">China</option>
+</select><br><br>
+Telephone : <input type="text" name="tel"><br><br>
+Fax : <input type="text" name="fax"><br><br>
+*Email Address : <input type="text" name="email"><br><br>
+
+</form>
+</div>
+
+</div>
+
+<button id="start" name="start"> START AGAIN></button><button id="payment" name="make" onclick="return makePayment();"> MAKE PAYMENT></button><br>
+<button id="cancel" name="cancel"> CANCEL</button><br><br>
+
+<div class="center">
+<hr align="center" width="40%">
+<h3 id ="refund">Refunds and Returns</h5>
+<h4 id="return">For more information visit our <u>Refunds and Returns Policy</u></h4>
+<h5 id="power">payments powered by</h5>
+<h4 id="worldpay">WorldPay</h4>
+<h5 id="help">For help with your payment visit the <u>WorldPay Help</u></h5>
+
+<font color="white" id="thanks">Thank you for shopping at Flowershop.Have a nice day</font>
+
+</div>
+
+
+<script src="index.js">
+</script>
+
+</body>
+</html>
